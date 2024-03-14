@@ -9,12 +9,12 @@ export default {
   },
 
   methods: {
-    // Redirect to loginPage /redireciona para a página de login.
+    // Redirect to login page/ redireciona a pagina de login.
     redirectToLogin () {
       this.useRouter.push('/login');
     },
-    // Exclude Token and redirect to login/
-    // Exclui o token e redireciona para o login.
+    // Excludes token and redirects to login page.
+    // Exclue o token e redireciona para a tela de LOGIN.
     logout () {
       localStorage.removeItem('token');
       this.redirectToLogin();
@@ -24,8 +24,6 @@ export default {
 </script>
 
 <template>
-  <!-- Top NavBar that should render on every page except for login page -->
-  <!-- Barra de navegação que deve renderizar em todas as paginas -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary margin-bottom" data-bs-theme="dark">
     <div class="container-fluid">
 
@@ -34,7 +32,7 @@ export default {
         <p class="constr font-size">File uploader</p>
       </div>
 
-      <!-- Cellphone navMenu /Menu navegação Celular -->
+      <!-- Cellphone menuNav/ Menu navegação Celular -->
       <button
         class="navbar-toggler"
         type="button"
@@ -46,18 +44,14 @@ export default {
       ><span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        
-      </div>
-
       <div class="d-flex separate">
-        <!-- Logout button/ Botão - Sair -->
+        <!-- Logout - Button/ Botão - Sair -->
         <button
           type="button"
           class="nav-link small"
           title="Logout"
           @click="logout"
-        ><img src="../assets/logout.png" alt="logout">
+        ><img src="../assets/logout.png" alt="Sair">
         </button>
       </div>
     </div>

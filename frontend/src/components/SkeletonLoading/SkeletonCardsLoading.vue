@@ -3,11 +3,10 @@
 
     <!-- Cards -->
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
-
       <div v-for="(arquivo, i) in 9" :key="i" class="col">
         <div class="card loading-elements bigger-cards">
           <div class="card-body flex-direction-row">
-              <h5 class="card-title loading-elements"></h5>
+              <h5 class="card-title texto-centralizado loading-elements"></h5>
               <div>
                 <button
                 class="btn loading-elements"
@@ -19,7 +18,6 @@
           </div>
         </div>
       </div>
-
     </div>
 
   </main>

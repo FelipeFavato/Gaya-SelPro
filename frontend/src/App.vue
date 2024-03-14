@@ -1,7 +1,4 @@
 <script>
-// npm i vue3-toastify 
-// npm install axios
-// npm install vue-router@4
 import { RouterView } from 'vue-router';
 import MenuNav from './components/MenuNav.vue';
 

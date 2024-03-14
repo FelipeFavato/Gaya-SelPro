@@ -1,0 +1,104 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`File > should render correctly 1`] = `
+"<main class="flex">
+  <!-- upload form -->
+  <div class="form-div">
+    <div></div>
+    <form class="row row-cols-lg-auto g-3 align-items-center forms">
+      <div class="row justify-content-center margin-left-2">
+        <!-- Centralizar os elementos verticalmente -->
+        <div class="col-6"><label id="name-category-label" class="visually-hidden" for="nameCategory">Name/Category</label>
+          <div class="input-group"><input type="text" class="form-control" id="nameCategory" placeholder="Name/Category"></div>
+        </div>
+        <div class="col-6"><label id="file-label" class="visually-hidden" for="file">File</label>
+          <div class="input-group"><input type="file" class="form-control" id="file"></div>
+        </div>
+        <div class="col-6 mt-2 buttons-div">
+          <div class=""><button type="submit" class="btn btn-secondary btn-block">Cancel</button></div>
+          <div class=""><button type="submit" class="btn btn-success btn-block">Upload</button></div>
+        </div>
+      </div>
+    </form>
+    <div></div>
+  </div>
+  <main class="flex">
+    <!-- Cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card loading-elements bigger-cards">
+          <div class="card-body flex-direction-row">
+            <h5 class="card-title texto-centralizado loading-elements"></h5>
+            <div><button class="btn loading-elements" type="button"> Delete </button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main><!-- Card -->
+  <!--v-if-->
+</main>"
+`;
