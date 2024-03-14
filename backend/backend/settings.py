@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'app',
+    'rest_framework',
+    'corsheaders', #pip install django-cors-headers
 ]
 
 MIDDLEWARE = [
@@ -47,6 +50,12 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
+]
+
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:5173',  # Adicione aqui as origens permitidas
 ]
 
 ROOT_URLCONF = "backend.urls"
@@ -121,3 +130,15 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+
+
+AWS_ACCESS_KEY_ID = 'AKIA47CRW3DUOENWUPE3'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'gayasimulationsbucket'
+AWS_S3_SIGNATURE_NAME = 's3v4'
+AWS_S3_REGION_NAME = 'us-east-2'
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+AWS_S3_VERITY = True
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
