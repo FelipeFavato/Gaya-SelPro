@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -53,9 +54,10 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-
+# Add permitted origins here
+# Adicione aqui as origens permitidas
 CORS_ORIGIN_WHITELIST = [
-    'http://localhost:5173',  # Adicione aqui as origens permitidas
+    'http://localhost:5173',  
 ]
 
 ROOT_URLCONF = "backend.urls"
@@ -133,11 +135,11 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 
-AWS_ACCESS_KEY_ID = 'AKIA47CRW3DUOENWUPE3'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'gayasimulationsbucket'
-AWS_S3_SIGNATURE_NAME = 's3v4'
-AWS_S3_REGION_NAME = 'us-east-2'
+AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
+AWS_S3_SIGNATURE_NAME = config('AWS_S3_SIGNATURE_NAME')
+AWS_S3_REGION_NAME = config('AWS_S3_REGION_NAME')
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 AWS_S3_VERITY = True
