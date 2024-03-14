@@ -1,47 +1,39 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script>
+// npm i vue3-toastify 
+// npm install axios
+// npm install vue-router@4
+import { RouterView } from 'vue-router';
+import MenuNav from './components/MenuNav.vue';
+
+export default {
+
+  components: {
+    MenuNav,
+  },
+
+  computed: {
+    isNotLoginPage() {
+      return this.$route.path !== "/login"
+    }
+  },
+
+}
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
+  <header v-if="isNotLoginPage">
+    <MenuNav />
   </header>
 
   <main>
-    <TheWelcome />
+    <RouterView />
   </main>
+
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+<style setup>
+body {
+  background-color: rgb(240, 240, 240);
 }
 </style>
