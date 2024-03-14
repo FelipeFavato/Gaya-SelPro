@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     'app',
-    'rest_framework',
+    'rest_framework', # pip install djangorestframework
     'corsheaders', #pip install django-cors-headers
 ]
 
@@ -54,8 +54,12 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-# Add permitted origins here
-# Adicione aqui as origens permitidas
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": ["rest_framework_simplejwt.authentication.JWTAuthentication"]
+}
+
+# Add permitted origins here/
+# Adicione aqui as origens permitidas.
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',  
 ]
@@ -134,7 +138,8 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
-
+# S3 bucket
+# Create a .env file and use your variables.
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
