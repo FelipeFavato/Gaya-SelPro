@@ -1,4 +1,15 @@
 <script>
+// NOTES:
+// Almost the entire application has been developed.
+// Due to the short time, 2 features are missing:
+// - Image download;
+// - Better frontend tests.
+
+// Quase toda a aplicação foi desenvolvida.
+// Devido ao pouco tempo, faltam 2 funcionalidades:
+// - Download de imagens;
+// - Testes frontend melhores.
+
 import { RouterView } from 'vue-router';
 import MenuNav from './components/MenuNav.vue';
 

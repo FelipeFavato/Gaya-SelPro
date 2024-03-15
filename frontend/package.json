@@ -19,6 +19,7 @@
     "vue3-toastify": "^0.2.1"
   },
   "devDependencies": {
+    "@testing-library/vue": "^8.0.2",
     "@vitejs/plugin-vue": "^5.0.4",
     "jsdom": "^24.0.0",
     "vite": "^5.1.5"

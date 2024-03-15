@@ -1,12 +1,28 @@
 // npm i vitest start-server-and-test @vue/test-utils
-// npm install --save-dev jest
+// npm install -D @testing-library/vue
+// Run the tests:
+//  - npm run unit:test
 
-import { describe, it, expect} from 'vitest';
+import { describe, it, expect, vi, beforeEach } from 'vitest';
 import Files from '../views/Files.vue';
 import { mount } from '@vue/test-utils';
 
+let mockGet = jest.fn();
+jest.mock('axios', () => ({
+  get: () => mockGet()
+}));
 
 describe('File', () => {
+
+  beforeEach(() => {
+    mockGet = jest.fn()
+  })
+
+  it('makes a GET request', async () => {
+    const wrapper = factory();
+    expect(mockGet).toHaveBeenCalledOnce();
+  });
+
   it('should render correctly', () => {
     const wrapper = mount(Files);
     expect(wrapper.html()).toMatchSnapshot()
@@ -23,6 +39,6 @@ describe('File', () => {
   it('should render file input', () => {
     const wrapper = mount(Files);
     expect(wrapper.find('input[type="file"]').exists()).toBeTruthy();
-
   });
+
 });

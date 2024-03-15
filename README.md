@@ -2,7 +2,7 @@
 This Repository is a RESTful API that uploads files to an S3 Bucket.
 
 
-## Backend: **Django** <img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" width="30">
+## Backend: **Django** <img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" width="40">
 - Packages:
 ```sh
 pip install django-storages
@@ -23,7 +23,7 @@ pip install djangorestframework-simplejwt
 pip install python-decouple
 ```
 
-## Frontend: **Vue** <img src="https://raw.githubusercontent.com/vuejs/art/master/logo.png" width="30">
+## Frontend: **Vue** <img src="https://raw.githubusercontent.com/vuejs/art/master/logo.png" width="40">
 - Packages:
 ```sh
 npm i vue3-toastify 
@@ -33,6 +33,9 @@ npm install axios
 ```
 ```sh
 npm install vue-router@4
+```
+```sh
+npm i vitest start-server-and-test @vue/test-utils
 ```
 
 ***
