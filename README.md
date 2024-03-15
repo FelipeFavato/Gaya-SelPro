@@ -3,6 +3,7 @@ This Repository is a RESTful API that uploads files to an S3 Bucket.
 
 
 ## Backend: **Django** <img src="https://www.djangoproject.com/m/img/logos/django-logo-negative.png" width="40">
+
 - Packages:
 ```sh
 pip install django-storages
@@ -24,6 +25,7 @@ pip install python-decouple
 ```
 
 ## Frontend: **Vue** <img src="https://raw.githubusercontent.com/vuejs/art/master/logo.png" width="40">
+
 - Packages:
 ```sh
 npm i vue3-toastify 
@@ -42,4 +44,9 @@ npm i vitest start-server-and-test @vue/test-utils
 
 ### Don't forget to add your variables as in the .env file.
 
+---
+
+Note:
+- The agile methodology was applied throughout development. Tool of choice: Trello.
+- It took me 2 days to finish the project.
 
