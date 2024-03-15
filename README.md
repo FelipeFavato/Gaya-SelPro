@@ -44,6 +44,13 @@ npm i vitest start-server-and-test @vue/test-utils
 
 ### Don't forget to add your variables as in the .env file.
 
+## How to access:
+```sh
+cd backend >>> python3 manage.py createsuperuser
+```
+
+Create a super user passing a name and a password and that will be your login credentials.
+
 ---
 
 Note:
